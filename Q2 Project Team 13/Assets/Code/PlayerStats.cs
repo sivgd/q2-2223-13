@@ -48,7 +48,7 @@ public class PlayerStats : MonoBehaviour
 
             sr.color = Color.red;
         }
-        else
+        else if (percentHealth < 0)
         {
             sr.color = Color.black;
             isAlive = false;
