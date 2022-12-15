@@ -6,7 +6,7 @@ TagManager:
   tags:
   - Fire
   - Ground
-  - Salt Water
+  - isAttachable
   layers:
   - Default
   - TransparentFX
