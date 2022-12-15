@@ -331,7 +331,7 @@ GameObject:
   - component: {fileID: 781407095}
   - component: {fileID: 781407096}
   m_Layer: 5
-  m_Name: Square
+  m_Name: HealthBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -416,7 +416,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 781407093}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d2c5602cf3a13b40a4c4cb5c9e13842, type: 3}
+  m_Script: {fileID: 11500000, guid: 6e8bc3309a4a2c44c887ef30191b634d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   playerHealth: 100
