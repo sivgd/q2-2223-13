@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Fire
   - Ground
+  - Salt Water
   layers:
   - Default
   - TransparentFX

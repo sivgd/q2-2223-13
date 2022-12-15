@@ -24,7 +24,7 @@ public class PlayerStats : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        
     }
 
     public void TakeDamage()
@@ -55,11 +55,18 @@ public class PlayerStats : MonoBehaviour
 
         }
 
-
+        
     }
 
 
 
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Salt Water")
+        {
+            playerHealth -= 1;
+        }
+    }
 
 
 
