@@ -35,7 +35,7 @@ public class Hop : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log(collision.tag);
+       // Debug.Log(collision.tag);
         if (collision.tag == "SuperJump")
         {
             jumpStrength = 1000;
