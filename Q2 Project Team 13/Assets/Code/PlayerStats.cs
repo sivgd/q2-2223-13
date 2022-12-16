@@ -12,7 +12,7 @@ public class PlayerStats : MonoBehaviour
     public bool isAlive;
     SpriteRenderer sr;
     public TMP_Text tmpHealth;
-
+   
     // Start is called before the first frame update
     void Start()
     {
@@ -60,13 +60,15 @@ public class PlayerStats : MonoBehaviour
 
 
 
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.gameObject.tag == "Salt Water")
-        {
-            playerHealth -= 1;
-        }
-    }
+   // private void OnTriggerEnter2D(Collider2D other)
+   // {
+       // if (other.gameObject.tag == "Salt Water")
+       // {
+           // playerHealth -= 1;
+            
+
+       // }
+   // }
 
 
 
