@@ -1,31 +1,31 @@
 fileFormatVersion: 2
-guid: 18fb8fb305a0d524fa8c37ac3d59410a
+guid: e8f22de7aad66874bbb9531e845ec666
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -487976264821365207
-    second: Ned_sprite_sheet_walking_conflict_0
+      213: -7241992059760726920
+    second: ned_0
   - first:
-      213: -6353747451674498055
-    second: Ned_sprite_sheet_walking_conflict_1
+      213: 4654506898772559625
+    second: ned_1
   - first:
-      213: 5690661871065838993
-    second: Ned_sprite_sheet_walking_conflict_2
+      213: 2274905863343206733
+    second: ned_2
   - first:
-      213: -2455105372854552566
-    second: Ned_sprite_sheet_walking_conflict_3
+      213: -7597949376670521906
+    second: ned_3
   - first:
-      213: 3455784641572476341
-    second: Ned_sprite_sheet_walking_conflict_4
+      213: 7929738354446089275
+    second: ned_4
   - first:
-      213: 5662216808746381822
-    second: Ned_sprite_sheet_walking_conflict_5
+      213: 622374539919835981
+    second: ned_5
   - first:
-      213: -3051306814563182594
-    second: Ned_sprite_sheet_walking_conflict_6
+      213: 6021651515557758580
+    second: ned_6
   - first:
-      213: 4709713906249282407
-    second: Ned_sprite_sheet_walking_conflict_7
+      213: -7447283734782872255
+    second: ned_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -139,169 +139,169 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Ned_sprite_sheet_walking_conflict_0
+      name: ned_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 812.5
+        width: 742.5
         height: 800
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 926208c2c2c5a39f0800000000000000
-      internalID: -487976264821365207
+      spriteID: 87c23c367964f7b90800000000000000
+      internalID: -7241992059760726920
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ned_sprite_sheet_walking_conflict_1
+      name: ned_1
       rect:
         serializedVersion: 2
         x: 812
         y: 0
-        width: 812.5
+        width: 742.5
         height: 800
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9fbe5663b54f2d7a0800000000000000
-      internalID: -6353747451674498055
+      spriteID: 90781f12d51289040800000000000000
+      internalID: 4654506898772559625
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ned_sprite_sheet_walking_conflict_2
+      name: ned_2
       rect:
         serializedVersion: 2
         x: 1624
         y: 0
-        width: 812.5
+        width: 742.5
         height: 800
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1953db142da49fe40800000000000000
-      internalID: 5690661871065838993
+      spriteID: d41760a64d6129f10800000000000000
+      internalID: 2274905863343206733
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ned_sprite_sheet_walking_conflict_3
+      name: ned_3
       rect:
         serializedVersion: 2
-        x: 2416
+        x: 2436
         y: 0
-        width: 728
+        width: 742.5
         height: 800
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a08f9dccba6bdedd0800000000000000
-      internalID: -2455105372854552566
+      spriteID: ec5272e2c49ae8690800000000000000
+      internalID: -7597949376670521906
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ned_sprite_sheet_walking_conflict_4
+      name: ned_4
       rect:
         serializedVersion: 2
-        x: 3118
+        x: 3187
         y: 0
-        width: 812
+        width: 742
         height: 800
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5b59d2d62d965ff20800000000000000
-      internalID: 3455784641572476341
+      spriteID: b3cbc8215071c0e60800000000000000
+      internalID: 7929738354446089275
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ned_sprite_sheet_walking_conflict_5
+      name: ned_5
       rect:
         serializedVersion: 2
-        x: 3970
+        x: 3986
         y: 0
-        width: 812
+        width: 742
         height: 800
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef1f296103c349e40800000000000000
-      internalID: 5662216808746381822
+      spriteID: d434b29b85e13a800800000000000000
+      internalID: 622374539919835981
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ned_sprite_sheet_walking_conflict_6
+      name: ned_6
       rect:
         serializedVersion: 2
-        x: 4793
+        x: 4772
         y: 0
-        width: 812
+        width: 742
         height: 800
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef79b316e9497a5d0800000000000000
-      internalID: -3051306814563182594
+      spriteID: 476430a3624319350800000000000000
+      internalID: 6021651515557758580
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ned_sprite_sheet_walking_conflict_7
+      name: ned_7
       rect:
         serializedVersion: 2
-        x: 5589
+        x: 5571
         y: 0
-        width: 812
+        width: 742
         height: 800
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 763b4b738d34c5140800000000000000
-      internalID: 4709713906249282407
+      spriteID: 145f8be86eee5a890800000000000000
+      internalID: -7447283734782872255
       vertices: []
       indices: 
       edges: []
