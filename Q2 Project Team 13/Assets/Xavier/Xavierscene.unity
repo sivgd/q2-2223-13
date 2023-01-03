@@ -193,6 +193,37 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7186145008440950404, guid: a9b0e8d06a04283428dcc6da11aa60d9, type: 3}
   m_PrefabInstance: {fileID: 634851424}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &139382537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 139382536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e8bc3309a4a2c44c887ef30191b634d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerHealth: 100
+  maxHealth: 100
+  yellowZone: 0
+  redZone: 0
+  isAlive: 1
+  tmpHealth: {fileID: 0}
+--- !u!114 &139382552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 139382536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69db78d84fa435342bb9b2f917dde113, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
 --- !u!1001 &634851424
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -204,17 +235,29 @@ PrefabInstance:
       propertyPath: m_Name
       value: Frog
       objectReference: {fileID: 0}
+    - target: {fileID: 7186145008440950417, guid: a9b0e8d06a04283428dcc6da11aa60d9, type: 3}
+      propertyPath: m_Distance
+      value: 0.005
+      objectReference: {fileID: 0}
+    - target: {fileID: 7186145008440950417, guid: a9b0e8d06a04283428dcc6da11aa60d9, type: 3}
+      propertyPath: m_ConnectedAnchor.x
+      value: -0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 7186145008440950417, guid: a9b0e8d06a04283428dcc6da11aa60d9, type: 3}
+      propertyPath: m_ConnectedAnchor.y
+      value: -3.4
+      objectReference: {fileID: 0}
     - target: {fileID: 7186145008440950429, guid: a9b0e8d06a04283428dcc6da11aa60d9, type: 3}
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7186145008440950429, guid: a9b0e8d06a04283428dcc6da11aa60d9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.9679358
+      value: -0.01
       objectReference: {fileID: 0}
     - target: {fileID: 7186145008440950429, guid: a9b0e8d06a04283428dcc6da11aa60d9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.9018036
+      value: -3.43
       objectReference: {fileID: 0}
     - target: {fileID: 7186145008440950429, guid: a9b0e8d06a04283428dcc6da11aa60d9, type: 3}
       propertyPath: m_LocalPosition.z
