@@ -10,8 +10,8 @@ public class Powerup : MonoBehaviour
     {
 
         //check here for player
-        Destroy(gameObject);
         powerupEffect.Apply(collision.gameObject);
+        Destroy(gameObject);
     }
 
 }

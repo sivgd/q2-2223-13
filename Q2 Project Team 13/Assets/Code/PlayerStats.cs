@@ -18,13 +18,18 @@ public class PlayerStats : MonoBehaviour
     {
         sr = GetComponent<SpriteRenderer>();
         sr.color = Color.green;
-        tmpHealth.text = playerHealth.ToString();
+        //tmpHealth.text = playerHealth.ToString();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (playerHealth > 100)
+        {
+
+
+            playerHealth = 100;
+        }
     }
 
     public void TakeDamage()
@@ -58,17 +63,17 @@ public class PlayerStats : MonoBehaviour
         
     }
 
+  
+
+    // private void OnTriggerEnter2D(Collider2D other)
+    // {
+    // if (other.gameObject.tag == "Salt Water")
+    // {
+    // playerHealth -= 1;
 
 
-   // private void OnTriggerEnter2D(Collider2D other)
-   // {
-       // if (other.gameObject.tag == "Salt Water")
-       // {
-           // playerHealth -= 1;
-            
-
-       // }
-   // }
+    // }
+    // }
 
 
 
