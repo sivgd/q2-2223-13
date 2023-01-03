@@ -18,7 +18,7 @@ public class PlayerStats : MonoBehaviour
     {
         sr = GetComponent<SpriteRenderer>();
         sr.color = Color.green;
-        tmpHealth.text = playerHealth.ToString();
+        //tmpHealth.text = playerHealth.ToString();
     }
 
     // Update is called once per frame
