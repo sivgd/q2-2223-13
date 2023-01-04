@@ -61,7 +61,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1436667266898403215, guid: fa91ed21adbf1984ea0c106408a7a461, type: 3}
       propertyPath: m_Name
-      value: Reset
+      value: Reset Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 1436667266898403215, guid: fa91ed21adbf1984ea0c106408a7a461, type: 3}
+      propertyPath: m_TagString
+      value: Spike
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa91ed21adbf1984ea0c106408a7a461, type: 3}

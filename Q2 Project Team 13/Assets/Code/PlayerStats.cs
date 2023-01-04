@@ -12,6 +12,7 @@ public class PlayerStats : MonoBehaviour
     public bool isAlive;
     SpriteRenderer sr;
     public TMP_Text tmpHealth;
+    public int health;
    
     // Start is called before the first frame update
     void Start()
@@ -62,8 +63,14 @@ public class PlayerStats : MonoBehaviour
 
         
     }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Spike")
+        {
+            health--;
+        }
+    }
 
-  
 
     // private void OnTriggerEnter2D(Collider2D other)
     // {
