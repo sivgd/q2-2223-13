@@ -1928,6 +1928,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Reset Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 2419711654768446912, guid: 9b971606d4e32f142a0b062469fd2837, type: 3}
+      propertyPath: m_TagString
+      value: Spike
+      objectReference: {fileID: 0}
     - target: {fileID: 2419711654768446913, guid: 9b971606d4e32f142a0b062469fd2837, type: 3}
       propertyPath: m_Radius
       value: 0.5035577
