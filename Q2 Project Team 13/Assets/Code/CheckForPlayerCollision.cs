@@ -14,7 +14,15 @@ public class CheckForPlayerCollision : MonoBehaviour
         {
             rb2 = mainPlayer.GetComponent<Rigidbody2D>();
             rb2.velocity = new Vector2(0, 0);
+            mainPlayer.GetComponent<PlayerStats>().playerHealth -= 5;
+        }
+        if ( mainPlayer.GetComponent<PlayerStats>().playerHealth < 0)
+        {
             mainPlayer.transform.localPosition = spawnpoint.transform.localPosition;
+        }
+        if (mainPlayer.GetComponent<PlayerStats>().playerHealth < 0)
+        {
+            mainPlayer.GetComponent<PlayerStats>().playerHealth = 100;
         }
     }
 

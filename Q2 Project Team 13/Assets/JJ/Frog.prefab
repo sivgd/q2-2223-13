@@ -22,9 +22,10 @@ GameObject:
   - component: {fileID: 7186145008440950416}
   - component: {fileID: 7186145008440950418}
   - component: {fileID: 7186145008440950419}
+  - component: {fileID: 848284188}
   m_Layer: 0
   m_Name: Frog
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -106,7 +107,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7671994f1d850841960d63e31c8fff2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  accel: 8
+  accel: 10
 --- !u!114 &7186145008440950424
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -194,7 +195,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.44822586}
+  m_Offset: {x: 0.00027287006, y: -0.44822586}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -205,7 +206,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.34146905}
+  m_Size: {x: 0.9973899, y: 0.34146905}
   m_EdgeRadius: 0
 --- !u!232 &7186145008440950417
 DistanceJoint2D:
@@ -224,7 +225,7 @@ DistanceJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_AutoConfigureDistance: 1
-  m_Distance: 1.8349861
+  m_Distance: 3.4804168
   m_MaxDistanceOnly: 0
 --- !u!120 &7186145008440950430
 LineRenderer:
@@ -366,7 +367,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.57, y: 0}
+  m_Offset: {x: 0.57, y: 0.0001847744}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -377,7 +378,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.15, y: 1}
+  m_Size: {x: 0.14999998, y: 0.99963045}
   m_EdgeRadius: 0
 --- !u!61 &7186145008440950419
 BoxCollider2D:
@@ -392,7 +393,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.57, y: 0}
+  m_Offset: {x: -0.57, y: 0.0001847744}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -403,5 +404,23 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.15, y: 1}
+  m_Size: {x: 0.14999998, y: 0.9996305}
   m_EdgeRadius: 0
+--- !u!114 &848284188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7186145008440950404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e8bc3309a4a2c44c887ef30191b634d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerHealth: 100
+  maxHealth: 100
+  yellowZone: 0
+  redZone: 0
+  isAlive: 1
+  tmpHealth: {fileID: 0}
