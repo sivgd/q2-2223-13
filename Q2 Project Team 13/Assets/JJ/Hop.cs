@@ -17,6 +17,7 @@ public class Hop : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        grounded = Physics2D.BoxCast(transform.position, new Vector2(0.1f, 0.1f), 0, Vector2.down, 1, LayerMask.GetMask("Ground"));
         if (Input.GetButtonDown("Jump") && grounded == true)
         {
             rb2.AddForce(new Vector2(0, jumpStrength));
@@ -31,19 +32,6 @@ public class Hop : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         grounded = false;
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-       // Debug.Log(collision.tag);
-        if (collision.tag == "SuperJump")
-        {
-            jumpStrength = 1000;
-        }
-        else
-        {
-            jumpStrength = 400;
-        }
     }
 
 }
