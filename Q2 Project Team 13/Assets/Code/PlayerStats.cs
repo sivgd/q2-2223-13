@@ -20,6 +20,7 @@ public class PlayerStats : MonoBehaviour
         sr = GetComponent<SpriteRenderer>();
         sr.color = Color.green;
         //tmpHealth.text = playerHealth.ToString();
+        //TakeDamage(30);
     }
 
     // Update is called once per frame
@@ -63,7 +64,14 @@ public class PlayerStats : MonoBehaviour
 
         
     }
-    
+
+    public void TakeDamage(int amountOfDamage)
+    {
+
+        playerHealth-=amountOfDamage;
+        tmpHealth.text = playerHealth.ToString();
+       
+    }
 
 
     // private void OnTriggerEnter2D(Collider2D other)
