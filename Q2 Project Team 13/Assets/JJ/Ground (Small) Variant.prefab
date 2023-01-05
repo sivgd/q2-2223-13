@@ -57,7 +57,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2508713624660607103, guid: f4129682df5aa9e458fc943d7d8a3b06, type: 3}
       propertyPath: m_Name
-      value: Ground (Small)
+      value: Ground (Small) Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508713624660607103, guid: f4129682df5aa9e458fc943d7d8a3b06, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4129682df5aa9e458fc943d7d8a3b06, type: 3}

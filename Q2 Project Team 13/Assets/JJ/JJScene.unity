@@ -1008,7 +1008,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 586712541}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c38ce4c7f88a2ba448bcfcd6a36dcdfe, type: 3}
+  m_Script: {fileID: 11500000, guid: 545ed14d197f25e478306010bd467925, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   spawnpoint: {fileID: 883139454}
@@ -1428,24 +1428,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7186145008440950404, guid: a9b0e8d06a04283428dcc6da11aa60d9, type: 3}
   m_PrefabInstance: {fileID: 7186145007661642889}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &848284188
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 848284173}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e8bc3309a4a2c44c887ef30191b634d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerHealth: 0
-  maxHealth: 100
-  yellowZone: 0
-  redZone: 0
-  isAlive: 1
-  tmpHealth: {fileID: 0}
 --- !u!1 &883139454
 GameObject:
   m_ObjectHideFlags: 0
@@ -3562,6 +3544,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground
       objectReference: {fileID: 0}
+    - target: {fileID: 2508713624660607103, guid: f4129682df5aa9e458fc943d7d8a3b06, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4129682df5aa9e458fc943d7d8a3b06, type: 3}
 --- !u!1001 &2571782740978223805
@@ -3745,18 +3731,6 @@ PrefabInstance:
     - target: {fileID: 7186145008440950404, guid: a9b0e8d06a04283428dcc6da11aa60d9, type: 3}
       propertyPath: m_Name
       value: Frog
-      objectReference: {fileID: 0}
-    - target: {fileID: 7186145008440950404, guid: a9b0e8d06a04283428dcc6da11aa60d9, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 7186145008440950424, guid: a9b0e8d06a04283428dcc6da11aa60d9, type: 3}
-      propertyPath: speedCap
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7186145008440950427, guid: a9b0e8d06a04283428dcc6da11aa60d9, type: 3}
-      propertyPath: accel
-      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7186145008440950429, guid: a9b0e8d06a04283428dcc6da11aa60d9, type: 3}
       propertyPath: m_RootOrder
