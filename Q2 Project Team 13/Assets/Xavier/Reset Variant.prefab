@@ -54,11 +54,11 @@ PrefabInstance:
     - target: {fileID: 1436667266898403213, guid: fa91ed21adbf1984ea0c106408a7a461, type: 3}
       propertyPath: mainPlayer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 8008467992852066422, guid: 6237cfdc48a514b40861e6a1cad3b114, type: 3}
     - target: {fileID: 1436667266898403213, guid: fa91ed21adbf1984ea0c106408a7a461, type: 3}
       propertyPath: spawnpoint
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 470188095701831763, guid: 26146657b1cf14a4e85afd71b64ce5de, type: 3}
     - target: {fileID: 1436667266898403215, guid: fa91ed21adbf1984ea0c106408a7a461, type: 3}
       propertyPath: m_Name
       value: Reset Variant
@@ -132,11 +132,11 @@ PrefabInstance:
     - target: {fileID: 1436667266898403213, guid: fa91ed21adbf1984ea0c106408a7a461, type: 3}
       propertyPath: mainPlayer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 8008467992852066422, guid: 6237cfdc48a514b40861e6a1cad3b114, type: 3}
     - target: {fileID: 1436667266898403213, guid: fa91ed21adbf1984ea0c106408a7a461, type: 3}
       propertyPath: spawnpoint
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 470188095701831763, guid: 26146657b1cf14a4e85afd71b64ce5de, type: 3}
     - target: {fileID: 1436667266898403215, guid: fa91ed21adbf1984ea0c106408a7a461, type: 3}
       propertyPath: m_Name
       value: Reset (2)
@@ -201,11 +201,11 @@ PrefabInstance:
     - target: {fileID: 1436667266898403213, guid: fa91ed21adbf1984ea0c106408a7a461, type: 3}
       propertyPath: mainPlayer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 8008467992852066422, guid: 6237cfdc48a514b40861e6a1cad3b114, type: 3}
     - target: {fileID: 1436667266898403213, guid: fa91ed21adbf1984ea0c106408a7a461, type: 3}
       propertyPath: spawnpoint
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 470188095701831763, guid: 26146657b1cf14a4e85afd71b64ce5de, type: 3}
     - target: {fileID: 1436667266898403215, guid: fa91ed21adbf1984ea0c106408a7a461, type: 3}
       propertyPath: m_Name
       value: Reset (1)
