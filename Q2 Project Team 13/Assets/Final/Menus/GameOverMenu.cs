@@ -7,6 +7,6 @@ public class GameOverMenu : MonoBehaviour
 {
     public void RestartGame()
     {
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("Test");
     }
 }
