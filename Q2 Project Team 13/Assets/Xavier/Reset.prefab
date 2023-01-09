@@ -96,8 +96,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c38ce4c7f88a2ba448bcfcd6a36dcdfe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnpoint: {fileID: 0}
-  mainPlayer: {fileID: 0}
+  spawnpoint: {fileID: 470188095701831763, guid: 26146657b1cf14a4e85afd71b64ce5de, type: 3}
+  mainPlayer: {fileID: 8008467992852066422, guid: 6237cfdc48a514b40861e6a1cad3b114, type: 3}
 --- !u!60 &6009831743123665866
 PolygonCollider2D:
   m_ObjectHideFlags: 0
