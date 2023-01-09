@@ -67,7 +67,8 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Spike
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -4739091065680689882, guid: fa91ed21adbf1984ea0c106408a7a461, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: fa91ed21adbf1984ea0c106408a7a461, type: 3}
 --- !u!4 &2419711654768446924 stripped
 Transform:
