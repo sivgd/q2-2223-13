@@ -7,8 +7,8 @@ public class PlayerStats : MonoBehaviour
 {
     public int playerHealth;
     public int maxHealth;
-    public float yellowZone;
-    public float redZone;
+    //public float yellowZone;
+   // public float redZone;
     public bool isAlive;
     SpriteRenderer sr;
     public TMP_Text tmpHealth;
@@ -17,8 +17,8 @@ public class PlayerStats : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        sr = GetComponent<SpriteRenderer>();
-        sr.color = Color.green;
+      //  sr = GetComponent<SpriteRenderer>();
+      //  sr.color = Color.green;
         //tmpHealth.text = playerHealth.ToString();
         //TakeDamage(30);
     }
@@ -40,27 +40,27 @@ public class PlayerStats : MonoBehaviour
         playerHealth--;
         tmpHealth.text = playerHealth.ToString();
         float percentHealth = (float)playerHealth / (float)maxHealth;
-        if (percentHealth > yellowZone)
-        {
-            sr.color = Color.green;
-        }
-        else if (percentHealth < yellowZone && percentHealth > redZone)
-        {
+        //if (percentHealth > yellowZone)
+      //  {
+        //    sr.color = Color.green;
+       // }
+       // else if (percentHealth < yellowZone && percentHealth > redZone)
+       // {
 
-            sr.color = Color.yellow;
+         //   sr.color = Color.yellow;
 
-        }
-        else if (percentHealth < yellowZone && percentHealth > 0)
-        {
+      //  }
+       // else if (percentHealth < yellowZone && percentHealth > 0)
+      //  {
 
-            sr.color = Color.red;
-        }
-        else if (percentHealth < 0)
-        {
-            sr.color = Color.black;
-            isAlive = false;
+       //     sr.color = Color.red;
+       // }
+      //  else if (percentHealth < 0)
+     //   {
+      //      sr.color = Color.black;
+       //     isAlive = false;
 
-        }
+      //  }
 
         
     }
