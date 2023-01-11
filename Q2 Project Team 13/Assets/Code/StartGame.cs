@@ -7,10 +7,10 @@ public class StartGame : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Player")
+        if (collision.tag == "")
         {
             Debug.Log("Switch scene");
-            SceneManager.LoadScene("TopDownMovementScene");
+            SceneManager.LoadScene("Game");
         }
     }
 
