@@ -34,18 +34,24 @@ public class Enemy_behaviour : MonoBehaviour
     {
         if (inRange)
         {
-            hit = Physics2D.Raycast(rayCast.position, Vector2.left, rayCastLength, raycastMask);
+            Hit = Physics2D.Raycast(rayCast.position, Vector2.left, rayCastLength, raycastMask);
             RaycastDebugger();
         }
 
         //When PLayer is detected
-        if(hit.collider != null)
+        if(Hit.collider != null)
         {
             EnemyLogic();
         }
         else if(Hit.collider == null)
         {
             inRange = false;
+        }
+
+        if(inRange == false)
+        {
+            anim.SetBool("canWalk", false);
+            StopAttack();
         }
     }
 
@@ -57,6 +63,12 @@ public class Enemy_behaviour : MonoBehaviour
             inRange = true;
         }
         
+        void EnemyLogic()
+        {
+            distance = Vector2.Distance(transform.position, target.transform.position)
+        }
+       
+
         void RaycastDebugger()
         {
             if(distance > attackDistance)
