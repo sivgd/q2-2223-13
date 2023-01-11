@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -30,7 +31,7 @@ public class Enemy_behaviour : MonoBehaviour
         anim = GetComponent<Animator>();
     }
 
-    void Update()
+    public void Update()
     {
         if (inRange)
         {
@@ -53,6 +54,31 @@ public class Enemy_behaviour : MonoBehaviour
             anim.SetBool("canWalk", false);
             StopAttack();
         }
+         void RaycastDebugger()
+        {
+            if(distance > attackDistance)
+            {
+                Debug.DrawRay(rayCast.position, Vector2.left * rayCastLength, Color.red);
+            }
+            else if(attackDistance > distance)
+            {
+                Debug.DrawRay(rayCast.position, Vector2.left * rayCastLength, Color.green);
+            }
+        }
+        void OnTriggerEnter2D(Collider2D trig)
+        {
+
+        }
+    }
+
+    private void StopAttack()
+    {
+        throw new NotImplementedException();
+    }
+
+    private void EnemyLogic()
+    {
+        throw new NotImplementedException();
     }
 
     void OnTriggerEnter2D (Collider2D trig)
@@ -65,20 +91,8 @@ public class Enemy_behaviour : MonoBehaviour
         
         void EnemyLogic()
         {
-            distance = Vector2.Distance(transform.position, target.transform.position)
+            distance = Vector2.Distance(transform.position, Target.transform.position);
         }
-       
-
-        void RaycastDebugger()
-        {
-            if(distance > attackDistance)
-            {
-                Debug.DrawRay(rayCast.position, Vector2.left * rayCastLength, Color.red);
-            }
-            else if(attackDistance > distance)
-            {
-                Debug.DrawRay(rayCast.position, Vector2.left * rayCastLength, Color.green);
-            }
-        }
+      
     }
 }
