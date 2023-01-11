@@ -1693,6 +1693,19 @@ PolygonCollider2D:
       - {x: -0.19, y: -0.62}
       - {x: -0.17, y: -0.64}
       - {x: -0.17, y: -0.63}
+--- !u!114 &629652004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 629651989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96f045f9dd2145144a1987d3dd79a73c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  accel: 10
 --- !u!1 &632247717
 GameObject:
   m_ObjectHideFlags: 0
@@ -2065,7 +2078,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1788034729338285987, guid: c91ee73b37002264486a4b549a21dc74, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5958803614536552672, guid: c91ee73b37002264486a4b549a21dc74, type: 3}
       propertyPath: mainCamera
@@ -2074,6 +2087,10 @@ PrefabInstance:
     - target: {fileID: 5958803614536552673, guid: c91ee73b37002264486a4b549a21dc74, type: 3}
       propertyPath: accel
       value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5958803614536552695, guid: c91ee73b37002264486a4b549a21dc74, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c91ee73b37002264486a4b549a21dc74, type: 3}

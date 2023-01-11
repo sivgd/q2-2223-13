@@ -7,17 +7,20 @@ public class Hop : MonoBehaviour
     public float jumpStrength = 400;
     public bool grounded;
     private Rigidbody2D rb2;
+    Animator a;
 
     // Start is called before the first frame update
     void Start()
     {
         rb2 = GetComponent<Rigidbody2D>();
+        a = gameObject.GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        grounded = Physics2D.BoxCast(transform.position, new Vector2(0.1f, 0.1f), 0, Vector2.down, 1, LayerMask.GetMask("Ground"));
+        a.SetFloat("yVelocity", rb2.velocity.y);
+        a.SetBool("Grounded", grounded);
         if (Input.GetButtonDown("Jump") && grounded == true)
         {
             rb2.AddForce(new Vector2(0, jumpStrength));
