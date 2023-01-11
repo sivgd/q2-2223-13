@@ -25,7 +25,7 @@ public class WallWalking : MonoBehaviour
         //Debug.Log(collision.tag);
         if (collision.tag == "Wall")
         {
-            //Debug.Log("In wall...");
+            Debug.Log("In wall...");
 
             if (Input.GetKey(KeyCode.W))
             {

@@ -280,9 +280,9 @@ GameObject:
   - component: {fileID: 1728382206}
   - component: {fileID: 1728382205}
   - component: {fileID: 1728382204}
-  - component: {fileID: 1728382208}
   - component: {fileID: 1728382207}
   - component: {fileID: 1728382203}
+  - component: {fileID: 1728382208}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
