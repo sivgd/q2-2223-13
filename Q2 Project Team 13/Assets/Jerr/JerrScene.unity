@@ -913,6 +913,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1028395060}
     m_Modifications:
+    - target: {fileID: 478793836283838121, guid: f999958283b504f4191593722bc1e4a9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1163045151400245935, guid: f999958283b504f4191593722bc1e4a9, type: 3}
       propertyPath: m_Color.b
       value: 0
@@ -942,8 +946,12 @@ PrefabInstance:
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2928430197103282319, guid: f999958283b504f4191593722bc1e4a9, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1.597
+      objectReference: {fileID: 0}
+    - target: {fileID: 2928430197103282319, guid: f999958283b504f4191593722bc1e4a9, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.000040233
+      value: -0.077271
       objectReference: {fileID: 0}
     - target: {fileID: 3685983844015530877, guid: f999958283b504f4191593722bc1e4a9, type: 3}
       propertyPath: m_Color.b
@@ -959,15 +967,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4013212137593706414, guid: f999958283b504f4191593722bc1e4a9, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.10254074
+      value: 0.20776029
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013212137593706414, guid: f999958283b504f4191593722bc1e4a9, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 16.162285
       objectReference: {fileID: 0}
     - target: {fileID: 4013212137593706414, guid: f999958283b504f4191593722bc1e4a9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.028928
+      value: 0.009
       objectReference: {fileID: 0}
     - target: {fileID: 4013212137593706414, guid: f999958283b504f4191593722bc1e4a9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.28
+      value: 0.1995
       objectReference: {fileID: 0}
     - target: {fileID: 5577568264166179677, guid: f999958283b504f4191593722bc1e4a9, type: 3}
       propertyPath: m_Name
@@ -1003,7 +1015,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5577568264166179678, guid: f999958283b504f4191593722bc1e4a9, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0.9056
+      value: 2.0238
       objectReference: {fileID: 0}
     - target: {fileID: 5577568264166179678, guid: f999958283b504f4191593722bc1e4a9, type: 3}
       propertyPath: m_SizeDelta.y
@@ -1047,7 +1059,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5577568264166179678, guid: f999958283b504f4191593722bc1e4a9, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 51.994263
       objectReference: {fileID: 0}
     - target: {fileID: 5577568264166179678, guid: f999958283b504f4191593722bc1e4a9, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -1070,12 +1082,24 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6231348838584104305, guid: f999958283b504f4191593722bc1e4a9, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.699221
+      objectReference: {fileID: 0}
+    - target: {fileID: 6231348838584104305, guid: f999958283b504f4191593722bc1e4a9, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0.999
+      value: 2.0127
       objectReference: {fileID: 0}
     - target: {fileID: 6231348838584104305, guid: f999958283b504f4191593722bc1e4a9, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 6
+      value: 6.5081
+      objectReference: {fileID: 0}
+    - target: {fileID: 6231348838584104305, guid: f999958283b504f4191593722bc1e4a9, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.091149
+      objectReference: {fileID: 0}
+    - target: {fileID: 6231348838584104305, guid: f999958283b504f4191593722bc1e4a9, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.2539
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f999958283b504f4191593722bc1e4a9, type: 3}
