@@ -26,7 +26,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Everything together test/L3/L3.unity
     guid: 7d222d2c10d347447a9ed61565c394cd
+  - enabled: 1
+    path: Assets/Everything together test/Tutorial/Tutorial.unity
+    guid: e3fc69f485aad5e4bbad621feac6991e
   - enabled: 0
-    path: Assets/Final/Menus/StartGameScene.unity
-    guid: ea1f8e1a0714ff34faf8c3380faba309
+    path: 
+    guid: 00000000000000000000000000000000
   m_configObjects: {}
