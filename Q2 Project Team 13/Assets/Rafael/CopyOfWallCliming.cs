@@ -7,13 +7,14 @@ public class CopyOfWallCliming : MonoBehaviour
     public float accel = 8;
     private Rigidbody2D rb2;
     private SpriteRenderer sr;
-
+    Animator a;
 
     // Start is called before the first frame update
     void Start()
     {
         rb2 = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
+        a = gameObject.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -41,13 +42,33 @@ public class CopyOfWallCliming : MonoBehaviour
                     rb2.AddForce(new Vector2(0, -accel));
                 }
             }
+            a.SetBool("Wall", true);
 
+        }
+        else
+        {
+
+            a.SetBool("Wall", false);
         }
     }
 
 
-    private void Update()
+    private void FixedUpdate()
     {
+        float vertiValue = Input.GetAxis("Vertical");
+
+        if (vertiValue == 0)
+        {
+
+            a.SetBool("Climbing", false);
+
+        }
+        else
+        {
+
+            a.SetBool("Climbing", true);
+
+        }
 
     }
 }
