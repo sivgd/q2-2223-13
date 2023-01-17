@@ -7,6 +7,8 @@ public class PlayerStats : MonoBehaviour
 {
     public int playerHealth;
     public int maxHealth;
+    public GameObject HealthBar;
+
     //public float yellowZone;
    // public float redZone;
     public bool isAlive;
@@ -38,8 +40,9 @@ public class PlayerStats : MonoBehaviour
     {
 
         playerHealth--;
-        tmpHealth.text = playerHealth.ToString();
+        //tmpHealth.text = playerHealth.ToString();
         float percentHealth = (float)playerHealth / (float)maxHealth;
+        ChangeHealthBar();
         //if (percentHealth > yellowZone)
       //  {
         //    sr.color = Color.green;
@@ -69,7 +72,8 @@ public class PlayerStats : MonoBehaviour
     {
 
         playerHealth-=amountOfDamage;
-        tmpHealth.text = playerHealth.ToString();
+       // tmpHealth.text = playerHealth.ToString();
+        ChangeHealthBar();
        
     }
 
@@ -83,6 +87,11 @@ public class PlayerStats : MonoBehaviour
 
     // }
     // }
+
+    public void ChangeHealthBar()
+    {
+        HealthBar.GetComponent<HealthBarMask>().MoveMask(playerHealth, maxHealth);
+    }
 
 
 
