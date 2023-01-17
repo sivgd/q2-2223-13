@@ -1,7 +1,7 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
 
 public class Enemy_behaviour : MonoBehaviour
 {
@@ -11,66 +11,123 @@ public class Enemy_behaviour : MonoBehaviour
     public float rayCastLength;
     public float attackDistance; //Minimum distance for attack
     public float moveSpeed;
-    public float timer; //Attack Cooldown
+    public float timer; //Timer for cooldown between attacks
+    public Transform leftLimit;
+    public Transform rightLimit;
     #endregion
 
     #region Private Variables
-    private RaycastHit2D Hit;
-    private GameObject Target;
+    private RaycastHit2D hit;
+    private Transform target;
     private Animator anim;
-    private float distance; //Store the distance between enemy and player
+    private float distance; //Store the distance b/w enemy and player
     private bool attackMode;
     private bool inRange; //Check if Player is in range
-    private bool cooling; // check if Enemy is cooling after attack
+    private bool cooling; //Check if Enemy is cooling after attack
     private float intTimer;
     #endregion
 
     void Awake()
     {
+        SelectTarget();
         intTimer = timer; //Store the inital value of timer
         anim = GetComponent<Animator>();
     }
 
-    public void Update()
+    void Update()
     {
+        if (!attackMode)
+        {
+            Move();
+        }
+
+        if (!InsideOfLimits() && !inRange && !anim.GetCurrentAnimatorStateInfo(0).IsName("Enemy_attack"))
+        {
+            SelectTarget();
+        }
+
         if (inRange)
         {
-            Hit = Physics2D.Raycast(rayCast.position, Vector2.left, rayCastLength, raycastMask);
+            hit = Physics2D.Raycast(rayCast.position, transform.right, rayCastLength, raycastMask);
             RaycastDebugger();
         }
 
-        //When PLayer is detected
-        if (Hit.collider != null)
+        //When Player is detected
+        if (hit.collider != null)
         {
             EnemyLogic();
         }
-        else if (Hit.collider == null)
+        else if (hit.collider == null)
         {
             inRange = false;
         }
 
         if (inRange == false)
         {
-            anim.SetBool("canWalk", false);
             StopAttack();
         }
-        void RaycastDebugger()
-        {
-            if (distance > attackDistance)
-            {
-                Debug.DrawRay(rayCast.position, Vector2.left * rayCastLength, Color.red);
-            }
-            else if (attackDistance > distance)
-            {
-                Debug.DrawRay(rayCast.position, Vector2.left * rayCastLength, Color.green);
-            }
-        }
-     
     }
 
-    private void EnemyLogic()
+    void OnTriggerEnter2D(Collider2D trig)
     {
-        throw new NotImplementedException();
+        if (trig.gameObject.tag == "Player")
+        {
+            target = trig.transform;
+            inRange = true;
+            Flip();
+        }
+    }
+
+    void EnemyLogic()
+    {
+        distance = Vector2.Distance(transform.position, target.position);
+
+        if (distance > attackDistance)
+        {
+            StopAttack();
+        }
+        else if (attackDistance >= distance && cooling == false)
+        {
+            Attack();
+        }
+
+        if (cooling)
+        {
+            Cooldown();
+            anim.SetBool("Attack", false);
+        }
+    }
+
+    void Move()
+    {
+        anim.SetBool("canWalk", true);
+
+        if (!anim.GetCurrentAnimatorStateInfo(0).IsName("Enemy_attack"))
+        {
+            Vector2 targetPosition = new Vector2(target.position.x, transform.position.y);
+
+            transform.position = Vector2.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
+        }
+    }
+
+    void Attack()
+    {
+        timer = intTimer; //Reset Timer when Player enter Attack Range
+        attackMode = true; //To check if Enemy can still attack or not
+
+        anim.SetBool("canWalk", false);
+        anim.SetBool("Attack", true);
+    }
+
+    void Cooldown()
+    {
+        timer -= Time.deltaTime;
+
+        if (timer <= 0 && cooling && attackMode)
+        {
+            cooling = false;
+            timer = intTimer;
+        }
     }
 
     void StopAttack()
@@ -80,58 +137,64 @@ public class Enemy_behaviour : MonoBehaviour
         anim.SetBool("Attack", false);
     }
 
-    void Move()
+    void RaycastDebugger()
     {
-        anim.SetBool("canWalk", true);
-
-        if(!anim.GetCurrentAnimatorStateInfo(0).IsName("Skel_attack"))
+        if (distance > attackDistance)
         {
-            Vector2 targetPosition = new Vector2(Target.transform.position.x, transform.position.y);
-
-            transform.position = Vector2.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
+            Debug.DrawRay(rayCast.position, transform.right * rayCastLength, Color.red);
+        }
+        else if (attackDistance > distance)
+        {
+            Debug.DrawRay(rayCast.position, transform.right * rayCastLength, Color.green);
         }
     }
 
-    void Attack()
+    public void TriggerCooling()
     {
-        timer = intTimer; //Reset TImer when Player Enters attack range
-        attackMode = true; // check if enemy has ABIlITAY to attack or not
-
-        anim.SetBool("canWalk", false);
-        anim.SetBool("Attack", true);
-    }
-   
-
-    void OnTriggerEnter2D(Collider2D trig)
-    {
-        if (trig.gameObject.tag == "Player")
-        {
-            Target = trig.gameObject;
-            inRange = true;
-        }
-
-        void EnemyLogic()
-        {
-            {
-                distance = Vector2.Distance(transform.position, Target.transform.position);
-                if (distance > attackDistance)
-                {
-                    Move();
-                    StopAttack();
-                }
-                else if (attackDistance >= distance && cooling == false)
-                {
-                    
-                }
-
-                if (cooling)
-                {
-                    anim.SetBool("Attack", false);
-                }
-            }
-
-        }
+        cooling = true;
     }
 
-   
+    private bool InsideOfLimits()
+    {
+        return transform.position.x > leftLimit.position.x && transform.position.x < rightLimit.position.x;
+    }
+
+    private void SelectTarget()
+    {
+        float distanceToLeft = Vector3.Distance(transform.position, leftLimit.position);
+        float distanceToRight = Vector3.Distance(transform.position, rightLimit.position);
+
+        if (distanceToLeft > distanceToRight)
+        {
+            target = leftLimit;
+        }
+        else
+        {
+            target = rightLimit;
+        }
+
+        //Ternary Operator
+        //target = distanceToLeft > distanceToRight ? leftLimit : rightLimit;
+
+        Flip();
+    }
+
+    void Flip()
+    {
+        Vector3 rotation = transform.eulerAngles;
+        if (transform.position.x > target.position.x)
+        {
+            rotation.y = 180;
+        }
+        else
+        {
+            Debug.Log("Twist");
+            rotation.y = 0;
+        }
+
+        //Ternary Operator
+        //rotation.y = (currentTarget.position.x < transform.position.x) ? rotation.y = 180f : rotation.y = 0f;
+
+        transform.eulerAngles = rotation;
+    }
 }
