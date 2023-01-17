@@ -34,6 +34,7 @@ public class PlayerStats : MonoBehaviour
 
             playerHealth = 100;
         }
+        ChangeHealthBar();
     }
 
     public void TakeDamage()
