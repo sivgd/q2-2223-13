@@ -318,12 +318,21 @@ LineRenderer:
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.6586207
+        value: 0.15200001
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 1, g: 0, b: 0, a: 1}
+      key0: {r: 1, g: 0, b: 0.7463417, a: 1}
       key1: {r: 1, g: 1, b: 1, a: 1}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
@@ -373,9 +382,9 @@ DistanceJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 0
   m_Anchor: {x: -0.004740566, y: 0.41077185}
-  m_ConnectedAnchor: {x: -0.40474057, y: -2.679228}
+  m_ConnectedAnchor: {x: -0.023796499, y: -1.1041708}
   m_AutoConfigureDistance: 1
-  m_Distance: 1.4464092
+  m_Distance: 0.18603595
   m_MaxDistanceOnly: 0
 --- !u!114 &7778668147235413166
 MonoBehaviour:
@@ -391,6 +400,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: 100
   maxHealth: 100
+  HealthBar: {fileID: 0}
   isAlive: 1
   tmpHealth: {fileID: 0}
 --- !u!114 &7778668147235413165
@@ -487,7 +497,7 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.1926056, y: -0.6915124}
+    - - {x: 0.1423164, y: -0.5364507}
       - {x: 0.11253077, y: -0.28644168}
       - {x: 0.16455594, y: -0.11890948}
       - {x: 0.34552208, y: -0.022385001}
@@ -521,12 +531,12 @@ PolygonCollider2D:
       - {x: -0.48939848, y: -0.24484967}
       - {x: -0.46759388, y: -0.41787592}
       - {x: -0.51303566, y: -0.51121235}
-      - {x: -0.5045488, y: -0.6836373}
-      - {x: -0.41, y: -0.72999996}
-      - {x: -0.17999999, y: -0.72999996}
+      - {x: -0.4906658, y: -0.676233}
+      - {x: -0.41, y: -0.7262978}
+      - {x: -0.1772234, y: -0.7235212}
       - {x: 0.089999996, y: -0.71}
-      - {x: 0.14, y: -0.66999996}
-      - {x: 0.15856846, y: -0.6926106}
+      - {x: 0.14161491, y: -0.70253646}
+      - {x: 0.14567973, y: -0.6321422}
     - - {x: -0.22, y: -0.59}
       - {x: -0.26999998, y: -0.59}
       - {x: -0.25, y: -0.57}

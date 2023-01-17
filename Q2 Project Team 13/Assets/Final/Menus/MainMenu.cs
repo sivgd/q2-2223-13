@@ -9,4 +9,8 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene("Test");
     }
+    public void ShowCredits()
+    {
+        SceneManager.LoadScene("CreditScene");
+    }
 }

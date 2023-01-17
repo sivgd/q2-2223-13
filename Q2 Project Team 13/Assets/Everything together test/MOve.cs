@@ -37,17 +37,18 @@ public class MOve : MonoBehaviour
         //Move right
         if (Input.GetAxis("Horizontal") > 0)
         {
-            sr.flipX = false;
-            rb2.AddForce(new Vector2(accel, 0));
+            //sr.flipX = false;
+            this.transform.localScale = new Vector3(1, 1, 1);
 
+            rb2.AddForce(new Vector2(accel, 0));
         }
 
         //Move left
         if (Input.GetAxis("Horizontal") < 0)
         {
-            sr.flipX = true;
+            //sr.flipX = true;
+            this.transform.localScale = new Vector3(-1, 1, 1);
             rb2.AddForce(new Vector2(-accel, 0));
-
         }
     }
 }
