@@ -31,9 +31,12 @@ public class Grappler : MonoBehaviour
                     {
                         //Debug.Log("OK to attach...");
                         Vector2 mousePos = (Vector2)mainCamera.ScreenToWorldPoint(Input.mousePosition);
-                        _lineRenderer.SetPosition(0, mousePos);
-                        _lineRenderer.SetPosition(1, transform.position);
-                        _distanceJoint.connectedAnchor = mousePos;
+                        Vector3 mP3 = new Vector3(mousePos.x, mousePos.y, -10);
+
+                        _lineRenderer.SetPosition(0, mP3);
+                        Vector3 tP3 = new Vector3(transform.position.x, transform.position.y, -10);
+                        _lineRenderer.SetPosition(1, tP3);
+                        _distanceJoint.connectedAnchor = mP3;
                         _distanceJoint.enabled = true;
                         _lineRenderer.enabled = true;
 
