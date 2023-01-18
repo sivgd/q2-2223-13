@@ -52,6 +52,14 @@ public class CopyOfWallCliming : MonoBehaviour
         }
     }
 
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if(collision.tag == "Wall")
+        {
+            a.SetBool("Wall", false);
+        }
+    }
+
 
     private void FixedUpdate()
     {
