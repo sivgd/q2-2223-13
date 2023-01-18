@@ -22,7 +22,7 @@ public class Enemy_behaviour : MonoBehaviour
     private Animator anim;
     private float distance; //Store the distance b/w enemy and player
     private bool attackMode;
-    private bool inRange; //Check if Player is in range
+    public bool inRange; //Check if Player is in range
     private bool cooling; //Check if Enemy is cooling after attack
     private float intTimer;
     #endregion
@@ -36,6 +36,8 @@ public class Enemy_behaviour : MonoBehaviour
 
     void Update()
     {
+        
+
         if (!attackMode)
         {
             Move();
@@ -48,6 +50,8 @@ public class Enemy_behaviour : MonoBehaviour
 
         if (inRange)
         {
+            Debug.Log("inRange");
+            EnemyLogic();
             hit = Physics2D.Raycast(rayCast.position, transform.right, rayCastLength, raycastMask);
             RaycastDebugger();
         }
@@ -72,8 +76,10 @@ public class Enemy_behaviour : MonoBehaviour
     {
         if (trig.gameObject.tag == "Player")
         {
-            target = trig.transform;
+
+            target = trig.gameObject.transform;
             inRange = true;
+            //Debug.Log("triggered");
             Flip();
         }
     }
@@ -82,12 +88,15 @@ public class Enemy_behaviour : MonoBehaviour
     {
         distance = Vector2.Distance(transform.position, target.position);
 
+        Debug.Log(distance + " " + attackDistance + " " + cooling);
+
         if (distance > attackDistance)
         {
             StopAttack();
         }
         else if (attackDistance >= distance && cooling == false)
         {
+            Debug.Log("---------------------------------------------------- ATTACK!!!!!");
             Attack();
         }
 
@@ -114,9 +123,10 @@ public class Enemy_behaviour : MonoBehaviour
     {
         timer = intTimer; //Reset Timer when Player enter Attack Range
         attackMode = true; //To check if Enemy can still attack or not
-
+        //Debug.Log("qwertyu");
         anim.SetBool("canWalk", false);
         anim.SetBool("Attack", true);
+        Debug.Log("runAttackAnim");
     }
 
     void Cooldown()
