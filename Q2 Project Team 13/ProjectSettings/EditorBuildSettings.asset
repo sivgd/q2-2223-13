@@ -18,12 +18,12 @@ EditorBuildSettings:
     path: Assets/Final/Menus/GameOverScene.unity
     guid: 0863448223ee15840a4f295e6cd762e4
   - enabled: 1
-    path: Assets/Everything together test/Test.unity
-    guid: 7345bbb96212db24d96f1f82115478f8
-  - enabled: 1
-    path: Assets/Everything together test/L2/L2.unity
+    path: Assets/Everything together test/L1/L1.unity
     guid: 053545bb6279f914ead6319a0f2726a9
   - enabled: 1
+    path: Assets/Everything together test/Test.unity
+    guid: 7345bbb96212db24d96f1f82115478f8
+  - enabled: 0
     path: Assets/Everything together test/L3/L3.unity
     guid: 7d222d2c10d347447a9ed61565c394cd
   - enabled: 1
