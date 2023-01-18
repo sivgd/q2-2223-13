@@ -320,6 +320,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 7778668147235413153, guid: e91baa63f2866a745b053543f467c702, type: 3}
+      propertyPath: m_Anchor.x
+      value: -0.004740566
+      objectReference: {fileID: 0}
+    - target: {fileID: 7778668147235413153, guid: e91baa63f2866a745b053543f467c702, type: 3}
+      propertyPath: m_Anchor.y
+      value: 0.41077185
+      objectReference: {fileID: 0}
+    - target: {fileID: 7778668147235413153, guid: e91baa63f2866a745b053543f467c702, type: 3}
+      propertyPath: m_Distance
+      value: 12.054112
+      objectReference: {fileID: 0}
     - target: {fileID: 7778668147235413165, guid: e91baa63f2866a745b053543f467c702, type: 3}
       propertyPath: m_Enabled
       value: 0
