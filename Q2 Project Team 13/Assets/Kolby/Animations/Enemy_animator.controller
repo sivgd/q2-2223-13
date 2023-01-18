@@ -93,7 +93,7 @@ AnimatorController:
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
-    m_DefaultBool: 0
+    m_DefaultBool: 1
     m_Controller: {fileID: 0}
   - m_Name: canWalk
     m_Type: 4
@@ -122,8 +122,8 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 1
-    m_ConditionEvent: Attack
+  - m_ConditionMode: 2
+    m_ConditionEvent: canWalk
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -8281725543047296255}
@@ -131,7 +131,7 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.06331009
+  m_TransitionDuration: 1
   m_TransitionOffset: 0
   m_ExitTime: 0.7307693
   m_HasExitTime: 0
@@ -227,10 +227,10 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: 8096547702877484004}
-    m_Position: {x: 450, y: 110, z: 0}
+    m_Position: {x: 330, y: 110, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -8281725543047296255}
-    m_Position: {x: 740, y: 110, z: 0}
+    m_Position: {x: 500, y: -40, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -2198915561195365904}
     m_Position: {x: 610, y: 320, z: 0}
