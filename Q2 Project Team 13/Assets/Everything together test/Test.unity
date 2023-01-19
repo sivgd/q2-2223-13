@@ -4130,6 +4130,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7772893083606309553, guid: f10a3fc5b3b8a8b4b9d48f5394a914af, type: 3}
+      propertyPath: jumpStrength
+      value: 400
+      objectReference: {fileID: 0}
     - target: {fileID: 7772893083606309559, guid: f10a3fc5b3b8a8b4b9d48f5394a914af, type: 3}
       propertyPath: m_Distance
       value: 0.18603595
