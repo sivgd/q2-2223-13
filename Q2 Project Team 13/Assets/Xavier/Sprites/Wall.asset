@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: Oiled Wall Middle
+  m_Name: Wall
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 21300000, guid: ee3b713aaf6b693499a92b38607a5a2c, type: 3}
+  m_Sprite: {fileID: 4936398493595430157, guid: 49a2269450dc1a84e956ddf20074c83c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1

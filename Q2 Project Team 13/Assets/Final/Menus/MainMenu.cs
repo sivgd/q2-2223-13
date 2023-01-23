@@ -7,7 +7,7 @@ public class MainMenu : MonoBehaviour
 {
     public void StartGame()
     {
-        SceneManager.LoadScene("L1");
+        SceneManager.LoadScene("Xavierscene");
     }
     public void ShowCredits()
     {
