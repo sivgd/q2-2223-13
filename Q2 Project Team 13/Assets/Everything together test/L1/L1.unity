@@ -352,7 +352,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2431751795085091840, guid: f10a3fc5b3b8a8b4b9d48f5394a914af, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 2431751795085091840, guid: f10a3fc5b3b8a8b4b9d48f5394a914af, type: 3}
       propertyPath: m_LocalRotation.w
@@ -385,6 +385,22 @@ PrefabInstance:
     - target: {fileID: 2431751795085091855, guid: f10a3fc5b3b8a8b4b9d48f5394a914af, type: 3}
       propertyPath: m_Name
       value: Player 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4138580747712016526, guid: f10a3fc5b3b8a8b4b9d48f5394a914af, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7772893083606309553, guid: f10a3fc5b3b8a8b4b9d48f5394a914af, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7772893083606309554, guid: f10a3fc5b3b8a8b4b9d48f5394a914af, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7772893083606309558, guid: f10a3fc5b3b8a8b4b9d48f5394a914af, type: 3}
+      propertyPath: m_GravityScale
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7772893083606309560, guid: f10a3fc5b3b8a8b4b9d48f5394a914af, type: 3}
       propertyPath: HealthBar
@@ -425,11 +441,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4013212137593706414, guid: f999958283b504f4191593722bc1e4a9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.03468
+      value: -0.0476
       objectReference: {fileID: 0}
     - target: {fileID: 4013212137593706414, guid: f999958283b504f4191593722bc1e4a9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.199
+      value: 0.26
       objectReference: {fileID: 0}
     - target: {fileID: 5577568264166179677, guid: f999958283b504f4191593722bc1e4a9, type: 3}
       propertyPath: m_Name
@@ -526,6 +542,18 @@ PrefabInstance:
     - target: {fileID: 5577568264166179678, guid: f999958283b504f4191593722bc1e4a9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5577568264166179679, guid: f999958283b504f4191593722bc1e4a9, type: 3}
+      propertyPath: m_Color.b
+      value: 0.07058824
+      objectReference: {fileID: 0}
+    - target: {fileID: 5577568264166179679, guid: f999958283b504f4191593722bc1e4a9, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5577568264166179679, guid: f999958283b504f4191593722bc1e4a9, type: 3}
+      propertyPath: m_Color.r
+      value: 0.7490196
       objectReference: {fileID: 0}
     - target: {fileID: 5577568264166179679, guid: f999958283b504f4191593722bc1e4a9, type: 3}
       propertyPath: m_SortingOrder
@@ -725,7 +753,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 700412041}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e67c833e0edac14fabada9985dab9dc, type: 3}
+  m_Script: {fileID: 11500000, guid: 2ec893f2be3f7604e8f1b2d681a63722, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!212 &700412044
@@ -1131,7 +1159,7 @@ GameObject:
   - component: {fileID: 1582769697}
   m_Layer: 3
   m_Name: Tilemap
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
