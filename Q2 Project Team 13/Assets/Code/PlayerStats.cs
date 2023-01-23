@@ -8,10 +8,12 @@ public class PlayerStats : MonoBehaviour
     public int playerHealth;
     public int maxHealth;
     public GameObject HealthBar;
-    Rigidbody2D rb2;
+    public Rigidbody2D rb2;
+    public GameObject Player;
+    Animator a;
 
     //public float yellowZone;
-   // public float redZone;
+    // public float redZone;
     public bool isAlive;
     SpriteRenderer sr;
     public TMP_Text tmpHealth;
@@ -26,6 +28,7 @@ public class PlayerStats : MonoBehaviour
         //tmpHealth.text = playerHealth.ToString();
         //TakeDamage(30);
         rb2 = GetComponent<Rigidbody2D>();
+        gameObject.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -39,14 +42,28 @@ public class PlayerStats : MonoBehaviour
         }
         ChangeHealthBar();
 
-        if(isAlive == false)
+        if (playerHealth <= 0)
         {
 
+            isAlive = false;
+
+        }
+
+
+        if(isAlive == false)
+        {
+            //a.SetBool("isAlive", false);
             GetComponent<MOve>().enabled = false;
             GetComponent<Hop>().enabled = false;
             GetComponent<Grappler>().enabled = false;
             GetComponent<CopyOfWallCliming>().enabled = false;
-            Invoke("SwitchScene", 3);
+            Invoke("SwitchScene", 5);
+           
+
+        }
+        else
+        {
+          //  a.SetBool("isAlive", true);
 
         }
 
@@ -59,14 +76,14 @@ public class PlayerStats : MonoBehaviour
         //tmpHealth.text = playerHealth.ToString();
         float percentHealth = (float)playerHealth / (float)maxHealth;
         ChangeHealthBar();
-        Debug.Log("Knockback");
-        rb2.AddForce(new Vector2(-13, 0));
-        GetComponent<MOve>().enabled = false;
-        GetComponent<Hop>().enabled = false;
-        GetComponent<Grappler>().enabled = false;
-        GetComponent<CopyOfWallCliming>().enabled = false;
-        isHurt = true;
-        Invoke("EnableMovement", 1);
+      //  Debug.Log("Knockback");
+       // rb2.AddForce(new Vector2(-13, 0));
+       // GetComponent<MOve>().enabled = false;
+       // GetComponent<Hop>().enabled = false;
+      //  GetComponent<Grappler>().enabled = false;
+      //  GetComponent<CopyOfWallCliming>().enabled = false;
+       // isHurt = true;
+       // Invoke("EnableMovement", 1);
 
         //if (percentHealth > yellowZone)
       //  {
@@ -97,9 +114,17 @@ public class PlayerStats : MonoBehaviour
     {
 
         playerHealth-=amountOfDamage;
-       // tmpHealth.text = playerHealth.ToString();
+        // tmpHealth.text = playerHealth.ToString();
+        GetComponent<MOve>().enabled = false;
+        GetComponent<Hop>().enabled = false;
+        GetComponent<Grappler>().enabled = false;
+        GetComponent<CopyOfWallCliming>().enabled = false;
+        Player.GetComponent<Rigidbody2D>().AddForce(new Vector2(10, 20), ForceMode2D.Impulse);
+      Debug.Log("Knockback");
+        isHurt = true;
+       // a.SetBool("isHurt", true);
+        Invoke("EnableMovement", 2);
         ChangeHealthBar();
-       
     }
 
 
@@ -128,6 +153,7 @@ public class PlayerStats : MonoBehaviour
         GetComponent<CopyOfWallCliming>().enabled = true;
 
         isHurt = false;
+       // a.SetBool("isHurt", false);
     }
 
     private void SwitchScene()
