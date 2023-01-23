@@ -187,6 +187,17 @@ PrefabInstance:
       propertyPath: m_Distance
       value: 17.086348
       objectReference: {fileID: 0}
+<<<<<<< HEAD
+=======
+    - target: {fileID: 7772893083606309560, guid: d048c99c18f75aa4d81d835d1a789589, type: 3}
+      propertyPath: rb2
+      value: 
+      objectReference: {fileID: 1761279849}
+    - target: {fileID: 7772893083606309560, guid: d048c99c18f75aa4d81d835d1a789589, type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 1761279837}
+>>>>>>> f94c00732184dc3817f2dce7d44c17500bbc004c
     - target: {fileID: 7772893083606309560, guid: d048c99c18f75aa4d81d835d1a789589, type: 3}
       propertyPath: HealthBar
       value: 
@@ -74381,6 +74392,11 @@ Transform:
 --- !u!1 &1761279837 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2431751795085091855, guid: d048c99c18f75aa4d81d835d1a789589, type: 3}
+  m_PrefabInstance: {fileID: 157381369}
+  m_PrefabAsset: {fileID: 0}
+--- !u!50 &1761279849 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 7772893083606309558, guid: d048c99c18f75aa4d81d835d1a789589, type: 3}
   m_PrefabInstance: {fileID: 157381369}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &1761279853
