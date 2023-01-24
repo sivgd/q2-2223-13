@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 9085317227431430304}
   - component: {fileID: 4881868362266130679}
   m_Layer: 31
-  m_Name: City Simple Gray Wall
+  m_Name: Gray Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

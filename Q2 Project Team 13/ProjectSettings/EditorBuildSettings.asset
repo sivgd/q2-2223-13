@@ -27,7 +27,7 @@ EditorBuildSettings:
     path: 
     guid: 7d222d2c10d347447a9ed61565c394cd
   - enabled: 1
-    path: Assets/Everything together test/Tutorial/Tutorial.unity
+    path: Assets/Final/Tutorial/Tutorial.unity
     guid: e3fc69f485aad5e4bbad621feac6991e
   - enabled: 0
     path: 
