@@ -115,19 +115,19 @@ public class PlayerStats : MonoBehaviour
 
         playerHealth-=amountOfDamage;
         // tmpHealth.text = playerHealth.ToString();
-<<<<<<< HEAD
+
         GetComponent<MOve>().enabled = false;
         GetComponent<Hop>().enabled = false;
         GetComponent<Grappler>().enabled = false;
         GetComponent<CopyOfWallCliming>().enabled = false;
         Player.GetComponent<Rigidbody2D>().AddForce(new Vector2(50, 60), ForceMode2D.Impulse);
-=======
+
         //GetComponent<MOve>().enabled = false;
        // GetComponent<Hop>().enabled = false;
        // GetComponent<Grappler>().enabled = false;
        // GetComponent<CopyOfWallCliming>().enabled = false;
         //Player.GetComponent<Rigidbody2D>().AddForce(new Vector2(10, 20), ForceMode2D.Impulse);
->>>>>>> 38b8fd25506bf1fb6d05de5846fc9dd4fb8c7a2e
+
       Debug.Log("Knockback");
         isHurt = true;
        // a.SetBool("isHurt", true);
