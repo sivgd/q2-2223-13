@@ -119,7 +119,7 @@ public class PlayerStats : MonoBehaviour
         GetComponent<Hop>().enabled = false;
         GetComponent<Grappler>().enabled = false;
         GetComponent<CopyOfWallCliming>().enabled = false;
-        Player.GetComponent<Rigidbody2D>().AddForce(new Vector2(10, 20), ForceMode2D.Impulse);
+        Player.GetComponent<Rigidbody2D>().AddForce(new Vector2(50, 60), ForceMode2D.Impulse);
       Debug.Log("Knockback");
         isHurt = true;
        // a.SetBool("isHurt", true);
