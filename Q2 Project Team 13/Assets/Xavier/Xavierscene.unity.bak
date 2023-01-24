@@ -393,6 +393,24 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player 1
       objectReference: {fileID: 0}
+<<<<<<< HEAD
+    - target: {fileID: 7772893083606309559, guid: d048c99c18f75aa4d81d835d1a789589, type: 3}
+      propertyPath: m_Distance
+      value: 17.086348
+      objectReference: {fileID: 0}
+<<<<<<< HEAD
+=======
+    - target: {fileID: 7772893083606309560, guid: d048c99c18f75aa4d81d835d1a789589, type: 3}
+      propertyPath: rb2
+      value: 
+      objectReference: {fileID: 1761279849}
+    - target: {fileID: 7772893083606309560, guid: d048c99c18f75aa4d81d835d1a789589, type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 1761279837}
+>>>>>>> f94c00732184dc3817f2dce7d44c17500bbc004c
+=======
+>>>>>>> parent of bc7df1d (good is good)
     - target: {fileID: 7772893083606309560, guid: d048c99c18f75aa4d81d835d1a789589, type: 3}
       propertyPath: HealthBar
       value: 
