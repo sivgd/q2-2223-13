@@ -1,31 +1,25 @@
 fileFormatVersion: 2
-guid: 980451ea6a883ee40913a989a7dbe7ad
+guid: 87f2d65a9b277734d8593d75983fa421
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2732987656855111333
-    second: Neil_Newt_Brother_Walk_Cycle_Test_0
+      213: -6677674313260976
+    second: Newt_Attack_Test_0
   - first:
-      213: 6938509330508051575
-    second: Neil_Newt_Brother_Walk_Cycle_Test_1
+      213: 4320285168923827068
+    second: Newt_Attack_Test_1
   - first:
-      213: 48091708067161137
-    second: Neil_Newt_Brother_Walk_Cycle_Test_2
+      213: 8554281218839330654
+    second: Newt_Attack_Test_2
   - first:
-      213: -504906286076217504
-    second: Neil_Newt_Brother_Walk_Cycle_Test_3
+      213: 2920025889078920189
+    second: Newt_Attack_Test_3
   - first:
-      213: 5930168820032216361
-    second: Neil_Newt_Brother_Walk_Cycle_Test_4
+      213: 547484658415754295
+    second: Newt_Attack_Test_4
   - first:
-      213: 5396074344064995805
-    second: Neil_Newt_Brother_Walk_Cycle_Test_5
-  - first:
-      213: -1509132996368615486
-    second: Neil_Newt_Brother_Walk_Cycle_Test_6
-  - first:
-      213: -5916955611756323045
-    second: Neil_Newt_Brother_Walk_Cycle_Test_7
+      213: 9044928923829099108
+    second: Newt_Attack_Test_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -70,7 +64,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 485
+  spritePixelsToUnits: 195
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -139,13 +133,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Neil_Newt_Brother_Walk_Cycle_Test_0
+      name: Newt_Attack_Test_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1397
-        height: 1214
+        width: 480
+        height: 480
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,20 +147,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b59bf91c43a721ad0800000000000000
-      internalID: -2732987656855111333
+      spriteID: 050e1aac0b648eff0800000000000000
+      internalID: -6677674313260976
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Neil_Newt_Brother_Walk_Cycle_Test_1
+      name: Newt_Attack_Test_1
       rect:
         serializedVersion: 2
-        x: 1397
+        x: 480
         y: 0
-        width: 1397
-        height: 1214
+        width: 480
+        height: 480
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,20 +168,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7747aab69798a4060800000000000000
-      internalID: 6938509330508051575
+      spriteID: c7bd716a87cb4fb30800000000000000
+      internalID: 4320285168923827068
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Neil_Newt_Brother_Walk_Cycle_Test_2
+      name: Newt_Attack_Test_2
       rect:
         serializedVersion: 2
-        x: 2794
+        x: 960
         y: 0
-        width: 1397
-        height: 1214
+        width: 480
+        height: 480
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -195,20 +189,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1342cf7572bdaa000800000000000000
-      internalID: 48091708067161137
+      spriteID: e5fb6bd2279e6b670800000000000000
+      internalID: 8554281218839330654
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Neil_Newt_Brother_Walk_Cycle_Test_3
+      name: Newt_Attack_Test_3
       rect:
         serializedVersion: 2
-        x: 4191
+        x: 1440
         y: 0
-        width: 1397
-        height: 1214
+        width: 480
+        height: 480
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -216,20 +210,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 067b09d68663ef8f0800000000000000
-      internalID: -504906286076217504
+      spriteID: df34e7d3314068820800000000000000
+      internalID: 2920025889078920189
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Neil_Newt_Brother_Walk_Cycle_Test_4
+      name: Newt_Attack_Test_4
       rect:
         serializedVersion: 2
-        x: 5588
+        x: 1920
         y: 0
-        width: 1397
-        height: 1214
+        width: 480
+        height: 480
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -237,20 +231,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 92d1e185f113c4250800000000000000
-      internalID: 5930168820032216361
+      spriteID: 73cd8d8656e099700800000000000000
+      internalID: 547484658415754295
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Neil_Newt_Brother_Walk_Cycle_Test_5
+      name: Newt_Attack_Test_5
       rect:
         serializedVersion: 2
-        x: 6985
+        x: 2400
         y: 0
-        width: 1397
-        height: 1214
+        width: 480
+        height: 480
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -258,50 +252,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd1d79bb605b2ea40800000000000000
-      internalID: 5396074344064995805
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Neil_Newt_Brother_Walk_Cycle_Test_6
-      rect:
-        serializedVersion: 2
-        x: 8382
-        y: 0
-        width: 1397
-        height: 1214
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2c7b0a8198b7e0be0800000000000000
-      internalID: -1509132996368615486
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Neil_Newt_Brother_Walk_Cycle_Test_7
-      rect:
-        serializedVersion: 2
-        x: 9779
-        y: 0
-        width: 1397
-        height: 1214
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b1f92817830c2eda0800000000000000
-      internalID: -5916955611756323045
+      spriteID: 46a5d732fea068d70800000000000000
+      internalID: 9044928923829099108
       vertices: []
       indices: 
       edges: []
