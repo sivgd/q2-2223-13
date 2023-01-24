@@ -14,12 +14,12 @@ public class CutsceneScript1 : MonoBehaviour
     void Start()
     {
         //For each credit screen, add a new reference here:
-        creditScreens[0] = GameObject.Find("Credit1");
-        creditScreens[1] = GameObject.Find("Credit2");
-        creditScreens[2] = GameObject.Find("Credit3");
-        //creditScreens[3] = GameObject.Find("Credit4");
-        //creditScreens[4] = GameObject.Find("Credit5");
-
+        creditScreens[0] = GameObject.Find("Cutscene1");
+        creditScreens[1] = GameObject.Find("Cutscene2");
+        creditScreens[2] = GameObject.Find("Cutscene3");
+        creditScreens[3] = GameObject.Find("Cutscene4");
+        creditScreens[4] = GameObject.Find("Cutscene5");
+        creditScreens[5] = GameObject.Find("Cutscene6");
 
         //Turn them all off...
         for (int i = 0; i < nScreens; i++)
