@@ -131,7 +131,7 @@ public class Niel_ai : MonoBehaviour
         anim.SetBool("Attack", true);
         Debug.Log("runAttackAnim");
         GameObject b = Instantiate(Bullet, FireFrom.transform.position, Quaternion.identity);
-        RigidBody2D rb2b = b.GetComponent<RigidBody2D>();
+        Rigidbody2D rb2b = b.GetComponent<Rigidbody2D>();
         rb2b.AddForce(fireSpeed * transform.up);
         Destroy(b, 2.0f);
     }
