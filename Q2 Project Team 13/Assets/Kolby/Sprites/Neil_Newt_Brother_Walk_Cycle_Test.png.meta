@@ -142,12 +142,12 @@ TextureImporter:
       name: Neil_Newt_Brother_Walk_Cycle_Test_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1397
-        height: 1214
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 126
+        y: 71
+        width: 1145
+        height: 1072
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -163,12 +163,12 @@ TextureImporter:
       name: Neil_Newt_Brother_Walk_Cycle_Test_1
       rect:
         serializedVersion: 2
-        x: 1397
-        y: 0
-        width: 1397
-        height: 1214
+        x: 1512
+        y: 71
+        width: 1167
+        height: 1072
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -184,12 +184,12 @@ TextureImporter:
       name: Neil_Newt_Brother_Walk_Cycle_Test_2
       rect:
         serializedVersion: 2
-        x: 2794
-        y: 0
-        width: 1397
-        height: 1214
+        x: 2936
+        y: 49
+        width: 1113
+        height: 1067
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -205,12 +205,12 @@ TextureImporter:
       name: Neil_Newt_Brother_Walk_Cycle_Test_3
       rect:
         serializedVersion: 2
-        x: 4191
-        y: 0
-        width: 1397
-        height: 1214
+        x: 4251
+        y: 44
+        width: 1337
+        height: 1077
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -226,12 +226,12 @@ TextureImporter:
       name: Neil_Newt_Brother_Walk_Cycle_Test_4
       rect:
         serializedVersion: 2
-        x: 5588
-        y: 0
-        width: 1397
-        height: 1214
+        x: 5714
+        y: 38
+        width: 1271
+        height: 1083
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -247,12 +247,12 @@ TextureImporter:
       name: Neil_Newt_Brother_Walk_Cycle_Test_5
       rect:
         serializedVersion: 2
-        x: 6985
-        y: 0
-        width: 1397
-        height: 1214
+        x: 7100
+        y: 82
+        width: 1287
+        height: 1066
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -268,12 +268,12 @@ TextureImporter:
       name: Neil_Newt_Brother_Walk_Cycle_Test_6
       rect:
         serializedVersion: 2
-        x: 8382
-        y: 0
-        width: 1397
-        height: 1214
+        x: 8480
+        y: 49
+        width: 1201
+        height: 1067
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -289,12 +289,12 @@ TextureImporter:
       name: Neil_Newt_Brother_Walk_Cycle_Test_7
       rect:
         serializedVersion: 2
-        x: 9779
-        y: 0
-        width: 1397
-        height: 1214
+        x: 9921
+        y: 5
+        width: 1113
+        height: 1154
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
