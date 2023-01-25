@@ -1,11 +1,11 @@
-using System.Collections;
+
+  using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-public class CutsceneScript1 : MonoBehaviour
-
+public class CutsceneScript2 : MonoBehaviour
 {
-    private static int nScreens = 7;
+    private static int nScreens = 6;
     private GameObject[] creditScreens = new GameObject[nScreens];
     private static int swapCount = 0;
 
@@ -19,8 +19,7 @@ public class CutsceneScript1 : MonoBehaviour
         creditScreens[2] = GameObject.Find("Cutscene3");
         creditScreens[3] = GameObject.Find("Cutscene4");
         creditScreens[4] = GameObject.Find("Cutscene5");
-        creditScreens[5] = GameObject.Find("Cutscene6");
-        creditScreens[6] = GameObject.Find("Sceneswitch");
+        creditScreens[5] = GameObject.Find("Sceneswitch");
 
         //Turn them all off...
         for (int i = 0; i < nScreens; i++)
@@ -37,7 +36,7 @@ public class CutsceneScript1 : MonoBehaviour
     {
         //if (GUI.Button(new Rect(100, 100, 200, 50), "Count: " + counter))
         //{ // the IF is true = clicked, lets count one
-            //counter++;
+        //counter++;
         //}
     }
 
@@ -45,7 +44,7 @@ public class CutsceneScript1 : MonoBehaviour
 
     void Update()
     {
-        
+
         if (Input.GetMouseButtonDown(0))
         {
             counter++;
@@ -56,7 +55,7 @@ public class CutsceneScript1 : MonoBehaviour
             currentScene = swapCount % nScreens;
             creditScreens[currentScene].SetActive(true);
 
-           
+
         }
 
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -68,11 +67,11 @@ public class CutsceneScript1 : MonoBehaviour
             Debug.Log("Switch scene");
             SceneManager.LoadScene("L1");
         }
-        if (counter == 6)
+        if (counter == 5)
         {
 
             Debug.Log("Switch scene");
-            SceneManager.LoadScene("L1");
+            SceneManager.LoadScene("Xavierscene");
 
 
 
@@ -80,5 +79,7 @@ public class CutsceneScript1 : MonoBehaviour
     } ////Update
 
 }
+
+
 
 
