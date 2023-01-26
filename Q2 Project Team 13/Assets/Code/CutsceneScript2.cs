@@ -71,7 +71,7 @@ public class CutsceneScript2 : MonoBehaviour
         {
 
             Debug.Log("Switch scene");
-            SceneManager.LoadScene("Xavierscene");
+            SceneManager.LoadScene("L1");
 
 
 
