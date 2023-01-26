@@ -72,7 +72,7 @@ public class CutsceneScript1 : MonoBehaviour
         {
 
             Debug.Log("Switch scene");
-            SceneManager.LoadScene("L1");
+            SceneManager.LoadScene("Xavierscene");
 
 
 
