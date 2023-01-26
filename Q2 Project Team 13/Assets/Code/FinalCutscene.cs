@@ -1,11 +1,11 @@
 
-  using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-public class CutsceneScript2 : MonoBehaviour
+public class FinalCutscene : MonoBehaviour
 {
-    private static int nScreens = 6;
+    private static int nScreens = 5;
     private GameObject[] creditScreens = new GameObject[nScreens];
     private static int swapCount = 0;
 
@@ -18,8 +18,7 @@ public class CutsceneScript2 : MonoBehaviour
         creditScreens[1] = GameObject.Find("Cutscene2");
         creditScreens[2] = GameObject.Find("Cutscene3");
         creditScreens[3] = GameObject.Find("Cutscene4");
-        creditScreens[4] = GameObject.Find("Cutscene5");
-        creditScreens[5] = GameObject.Find("Sceneswitch");
+        creditScreens[4] = GameObject.Find("Sceneswitch");
 
         //Turn them all off...
         for (int i = 0; i < nScreens; i++)
@@ -67,11 +66,11 @@ public class CutsceneScript2 : MonoBehaviour
             Debug.Log("Switch scene");
             SceneManager.LoadScene("L1");
         }
-        if (counter == 5)
+        if (counter == 4)
         {
 
             Debug.Log("Switch scene");
-            SceneManager.LoadScene("L1");
+            SceneManager.LoadScene("Test");
 
 
 
