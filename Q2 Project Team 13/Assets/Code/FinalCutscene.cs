@@ -14,10 +14,10 @@ public class FinalCutscene : MonoBehaviour
     void Start()
     {
         //For each credit screen, add a new reference here:
-        creditScreens[0] = GameObject.Find("Cutscene1");
-        creditScreens[1] = GameObject.Find("Cutscene2");
-        creditScreens[2] = GameObject.Find("Cutscene3");
-        creditScreens[3] = GameObject.Find("Cutscene4");
+        creditScreens[0] = GameObject.Find("1");
+        creditScreens[1] = GameObject.Find("2");
+        creditScreens[2] = GameObject.Find("3");
+        creditScreens[3] = GameObject.Find("4");
         creditScreens[4] = GameObject.Find("Sceneswitch");
 
         //Turn them all off...
