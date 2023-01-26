@@ -10,7 +10,7 @@ public class LevelTwo : MonoBehaviour
         if (collision.tag == "Player")
         {
             Debug.Log("Switch scene");
-            SceneManager.LoadScene("Cutscenes3");
+            SceneManager.LoadScene("Cutscene3");
         }
     }
 
