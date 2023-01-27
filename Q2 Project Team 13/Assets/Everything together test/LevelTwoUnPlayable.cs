@@ -10,7 +10,7 @@ public class LevelTwoUnPlayable : MonoBehaviour
         if (collision.tag == "Player")
         {
             Debug.Log("Switch scene");
-            SceneManager.LoadScene("StartGameSceneFixed");
+            SceneManager.LoadScene("FinalCutscenes");
         }
     }
 }
