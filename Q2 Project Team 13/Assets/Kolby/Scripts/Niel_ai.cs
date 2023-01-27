@@ -16,6 +16,7 @@ public class Niel_ai : MonoBehaviour
     public GameObject Bullet;
     public GameObject FireFrom;
     public float fireSpeed = 1000;
+    public SpriteRenderer sr;
     #endregion
 
     #region Private Variables
@@ -29,6 +30,12 @@ public class Niel_ai : MonoBehaviour
     private float intTimer;
     private Rigidbody2D rb2;
     #endregion
+
+
+    private void Start()
+    {
+        sr = GetComponent<SpriteRenderer>();
+    }
 
     void Awake()
     {
@@ -184,6 +191,7 @@ public class Niel_ai : MonoBehaviour
         if (distanceToLeft > distanceToRight)
         {
             target = leftLimit;
+           
         }
         else
         {
