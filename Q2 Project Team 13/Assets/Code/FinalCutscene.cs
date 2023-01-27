@@ -70,7 +70,7 @@ public class FinalCutscene : MonoBehaviour
         {
 
             Debug.Log("Switch scene");
-            SceneManager.LoadScene("Test");
+            SceneManager.LoadScene("StartGameSceneFixed");
 
 
 

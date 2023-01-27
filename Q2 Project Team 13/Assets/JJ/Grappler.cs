@@ -8,12 +8,12 @@ public class Grappler : MonoBehaviour
     public LineRenderer _lineRenderer;
     public DistanceJoint2D _distanceJoint;
     public bool isAttachable;
-
+    Animator a;
     // Start is called before the first frame update
     void Start()
     {
         _distanceJoint.enabled = false;
-        
+        a = gameObject.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -39,7 +39,7 @@ public class Grappler : MonoBehaviour
                         _distanceJoint.connectedAnchor = mP3;
                         _distanceJoint.enabled = true;
                         _lineRenderer.enabled = true;
-
+                        a.SetBool("Grappled", true);
 
                     }
 
@@ -59,6 +59,7 @@ public class Grappler : MonoBehaviour
         {
             _distanceJoint.enabled = false;
             _lineRenderer.enabled = false;
+            a.SetBool("Grappled", false);
         }
         if (_distanceJoint.enabled)
         {
