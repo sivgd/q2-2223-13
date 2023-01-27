@@ -45,6 +45,12 @@ public class Grappler : MonoBehaviour
 
                 }
             }
+            else if (Input.GetKeyUp(KeyCode.Mouse0))
+            {
+                _distanceJoint.enabled = false;
+                _lineRenderer.enabled = false;
+                a.SetBool("Grappled", false);
+            }
         }
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
@@ -55,12 +61,7 @@ public class Grappler : MonoBehaviour
             //_distanceJoint.enabled = true;
             //_lineRenderer.enabled = true;
         }
-        else if (Input.GetKeyUp(KeyCode.Mouse0))
-        {
-            _distanceJoint.enabled = false;
-            _lineRenderer.enabled = false;
-            a.SetBool("Grappled", false);
-        }
+      
         if (_distanceJoint.enabled)
         {
             _lineRenderer.SetPosition(1, transform.position);
