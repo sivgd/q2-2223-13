@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CheckForPlayerCollision : MonoBehaviour
 {
@@ -18,7 +19,8 @@ public class CheckForPlayerCollision : MonoBehaviour
         }
         if ( mainPlayer.GetComponent<PlayerStats>().playerHealth == 0)
         {
-            mainPlayer.transform.localPosition = spawnpoint.transform.localPosition;
+            //mainPlayer.transform.localPosition = spawnpoint.transform.localPosition;
+            SceneManager.LoadScene("GameOverScene");
         }
         if (mainPlayer.GetComponent<PlayerStats>().playerHealth == 0)
         {

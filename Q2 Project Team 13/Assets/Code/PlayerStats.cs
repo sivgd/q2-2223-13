@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class PlayerStats : MonoBehaviour
 {
@@ -52,13 +53,8 @@ public class PlayerStats : MonoBehaviour
 
         if(isAlive == false)
         {
-            //a.SetBool("isAlive", false);
-            GetComponent<MOve>().enabled = false;
-            GetComponent<Hop>().enabled = false;
-            GetComponent<Grappler>().enabled = false;
-            GetComponent<CopyOfWallCliming>().enabled = false;
-            Invoke("SwitchScene", 5);
-           
+
+            SceneManager.LoadScene("GameOverScene");
 
         }
         else
