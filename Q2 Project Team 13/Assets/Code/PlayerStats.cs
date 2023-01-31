@@ -54,7 +54,7 @@ public class PlayerStats : MonoBehaviour
         if(isAlive == false)
         {
 
-            SceneManager.LoadScene("GameOverScene");
+            
 
         }
         else
