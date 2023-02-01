@@ -36,7 +36,7 @@ EditorBuildSettings:
     path: Assets/Final/Menus/CreditScene.unity
     guid: 778f32ac61d65574a8ec86f433fc7260
   - enabled: 1
-    path: Assets/Xavier/Xavierscene.unity
+    path: Assets/Xavier/Tutorial.unity
     guid: d4685e62ad2ff5c4bb2b90c9cf8577e5
   - enabled: 1
     path: Assets/Final/Menus/Cutscenes1.unity
