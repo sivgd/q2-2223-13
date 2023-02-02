@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Docks
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: 113d0f1d83ce7bf44ace6d812fee3a56, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 1507256347732816352, guid: 113d0f1d83ce7bf44ace6d812fee3a56, type: 3}
+  - {fileID: 3451452391495080748, guid: 113d0f1d83ce7bf44ace6d812fee3a56, type: 3}
+  - {fileID: -4482093105054099195, guid: 113d0f1d83ce7bf44ace6d812fee3a56, type: 3}
+  - {fileID: -8344749467101982337, guid: 113d0f1d83ce7bf44ace6d812fee3a56, type: 3}
+  - {fileID: 6127137911227660842, guid: 113d0f1d83ce7bf44ace6d812fee3a56, type: 3}
+  - {fileID: 6054015582155444564, guid: 113d0f1d83ce7bf44ace6d812fee3a56, type: 3}
+  - {fileID: 4790516737767543295, guid: 113d0f1d83ce7bf44ace6d812fee3a56, type: 3}
+  - {fileID: 8261722501883326023, guid: 113d0f1d83ce7bf44ace6d812fee3a56, type: 3}
+  - {fileID: 3757505871349707836, guid: 113d0f1d83ce7bf44ace6d812fee3a56, type: 3}
+  - {fileID: -484767335222934883, guid: 113d0f1d83ce7bf44ace6d812fee3a56, type: 3}
+  - {fileID: -35517148205838290, guid: 113d0f1d83ce7bf44ace6d812fee3a56, type: 3}
+  - {fileID: 7974149146337432708, guid: 113d0f1d83ce7bf44ace6d812fee3a56, type: 3}
+  - {fileID: 5152635543716560806, guid: 113d0f1d83ce7bf44ace6d812fee3a56, type: 3}
+  - {fileID: -4713512548509619037, guid: 113d0f1d83ce7bf44ace6d812fee3a56, type: 3}
+  - {fileID: -109934941011771714, guid: 113d0f1d83ce7bf44ace6d812fee3a56, type: 3}
+  - {fileID: 4042314593106687245, guid: 113d0f1d83ce7bf44ace6d812fee3a56, type: 3}
+  - {fileID: -3349564474596144406, guid: 113d0f1d83ce7bf44ace6d812fee3a56, type: 3}
+  - {fileID: 5887565901140521075, guid: 113d0f1d83ce7bf44ace6d812fee3a56, type: 3}
+  - {fileID: 2890214163184211866, guid: 113d0f1d83ce7bf44ace6d812fee3a56, type: 3}
+  - {fileID: -5488313073636165756, guid: 113d0f1d83ce7bf44ace6d812fee3a56, type: 3}
+  - {fileID: 2518224269396594693, guid: 113d0f1d83ce7bf44ace6d812fee3a56, type: 3}
+  - {fileID: -6898465214236787873, guid: 113d0f1d83ce7bf44ace6d812fee3a56, type: 3}
+  - {fileID: 2442758567943244603, guid: 113d0f1d83ce7bf44ace6d812fee3a56, type: 3}
+  - {fileID: 5426981899554003492, guid: 113d0f1d83ce7bf44ace6d812fee3a56, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Dock_18
+  - Dock_19
+  - Dock_12
+  - Dock_13
+  - Dock_10
+  - Dock_11
+  - Dock_16
+  - Dock_17
+  - Dock_14
+  - Dock_15
+  - Dock_9
+  - Dock_8
+  - Dock_7
+  - Dock_6
+  - Dock_5
+  - Dock_4
+  - Dock_3
+  - Dock_2
+  - Dock_23
+  - Dock_1
+  - Dock_22
+  - Dock_0
+  - Dock_21
+  - Dock_20
+  m_RenderDataMap: {}
+  m_Tag: Docks
+  m_IsVariant: 0
