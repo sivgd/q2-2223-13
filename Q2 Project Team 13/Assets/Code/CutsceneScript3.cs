@@ -70,7 +70,7 @@ public class CutsceneScript3 : MonoBehaviour
         {
 
             Debug.Log("Switch scene");
-            SceneManager.LoadScene("Test");
+            SceneManager.LoadScene("City");
 
 
 
