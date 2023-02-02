@@ -150,7 +150,7 @@ PolygonCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
+    border: {x: 0, y: 0.14999999, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 1.76, y: 1.745}
     newSize: {x: 1, y: 1}
@@ -401,8 +401,11 @@ MonoBehaviour:
   playerHealth: 100
   maxHealth: 100
   HealthBar: {fileID: 0}
+  rb2: {fileID: 0}
+  Player: {fileID: 0}
   isAlive: 1
   tmpHealth: {fileID: 0}
+  isHurt: 0
 --- !u!114 &7772893083606309563
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -487,7 +490,7 @@ PolygonCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
+    border: {x: 0, y: 0.14999999, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 1.76, y: 1.745}
     newSize: {x: 1, y: 1}
