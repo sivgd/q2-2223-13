@@ -7,6 +7,6 @@ public class GameOverScript2 : MonoBehaviour
 {
     public void RestartGame()
     {
-        SceneManager.LoadScene("xavierscene");
+        SceneManager.LoadScene("Tutorial");
     }
 }
