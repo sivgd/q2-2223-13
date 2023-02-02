@@ -26,7 +26,7 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 1
+  - enabled: 0
     path: Assets/Final/Menus/Tutorial/Tutorial.unity
     guid: e3fc69f485aad5e4bbad621feac6991e
   - enabled: 0
