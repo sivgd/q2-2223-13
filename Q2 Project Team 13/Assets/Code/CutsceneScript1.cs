@@ -63,16 +63,11 @@ public class CutsceneScript1 : MonoBehaviour
         {
             Application.Quit();
         }
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Debug.Log("Switch scene");
-            SceneManager.LoadScene("L1");
-        }
         if (counter == 6)
         {
 
             Debug.Log("Switch scene");
-            SceneManager.LoadScene("Xavierscene");
+            SceneManager.LoadScene("Tutorial");
 
 
 

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8733548242243487572}
   - component: {fileID: 8733548242243487573}
   - component: {fileID: 8733548242243487570}
-  - component: {fileID: 8733548242243487571}
+  - component: {fileID: 3366120224799212801}
   m_Layer: 0
   m_Name: Test Spike
   m_TagString: Spike
@@ -311,7 +311,7 @@ PolygonCollider2D:
       - {x: 0.5, y: -0.5}
       - {x: 0.5, y: -0.25347224}
       - {x: 0.4887153, y: -0.2517361}
---- !u!114 &8733548242243487571
+--- !u!114 &3366120224799212801
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -320,7 +320,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8733548242243487568}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c38ce4c7f88a2ba448bcfcd6a36dcdfe, type: 3}
+  m_Script: {fileID: 11500000, guid: ab9f6badae62ada458ebeafec41eb562, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   spawnpoint: {fileID: 0}
