@@ -1,0 +1,25 @@
+﻿Proposed changes for v0.0.3
++ Added CHANGELOG
++ debug commands
++ stats for player
++ inventory
++ random number
++ WhereAmI(Similar look, when we move, we see the description)
++ Shortcut Navigation
++ location requirement
+
+
+
+Version 0.0.3 completed on _____3/6/2023_____
+
+Proposed changes for v 0.0.4
+
++Healing each move(regeneration)
++Add quests to the system
++Monster Detection
+Version 0.0.4 completed on _____3/10/2023_____
+
+Proposed changes for v 0.0.5
++ Weapon Equipping
++ Attack Engine
++ Cleanup and abbreviation
