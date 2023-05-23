@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CRPG
 {
-  public  class Player:LivingCreature
+    public class Player : LivingCreature
     {
 
         public string Name;
@@ -14,9 +14,11 @@ namespace CRPG
         public Location CurrentLocation;
         public List<InventoryItem> Inventory;
         public List<PlayerQuest> Quests;
+        public Weapon CurrentWeapon;
+        public List<Weapon> Weapons = new List<Weapon>();
 
 
-        public Player(string name, int currentHitPoints, int maximumHitPoints, int gold, int experiencePoints, int level): base (currentHitPoints, maximumHitPoints)
+        public Player(string name, int currentHitPoints, int maximumHitPoints, int gold, int experiencePoints, int level) : base(currentHitPoints, maximumHitPoints)
         {
 
             Name = name;
@@ -31,7 +33,7 @@ namespace CRPG
 
         }
         public Player() { }
-       
+
 
         public void MoveTo(Location loc)
         {
@@ -40,7 +42,7 @@ namespace CRPG
             {
                 //Do you have it?
                 bool playerHasRequiredItem = false;
-                foreach(InventoryItem ii in this.Inventory)
+                foreach (InventoryItem ii in this.Inventory)
                 {
 
                     if (ii.Details.ID == loc.ItemRequiredToEnter.ID)
@@ -77,7 +79,7 @@ namespace CRPG
         public void MoveNorth()
         {
 
-            if(CurrentLocation.LocationToNorth != null)
+            if (CurrentLocation.LocationToNorth != null)
             {
                 MoveTo(CurrentLocation.LocationToNorth);
 
@@ -265,6 +267,36 @@ namespace CRPG
             }
         }
 
+        /////////////////////////////////////////////////////////////////////////////////////////Weapon work
+        public void UseWeapon(Weapon weapon)
+        {
+            Console.WriteLine("FIGHT! -- TODO FINISH LATER");
 
+
+        }
+
+        public void UpdateWeapons()
+        {
+
+            foreach (InventoryItem inventoryItem in this.Inventory)
+            {
+
+                if (inventoryItem.Details is Weapon)
+                {
+
+                    if(inventoryItem.Quantity > 0)
+                    {
+
+                        Weapons.Add((Weapon)inventoryItem.Details);
+
+                    }
+
+
+                }
+
+
+            }
+
+        }
     }
-}
+}  

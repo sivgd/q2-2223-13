@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CRPG
 {
-    class Weapon : Item
+   public  class Weapon : Item
     {
 
         public int MaximumDamage;

@@ -149,6 +149,47 @@ namespace CRPG
 
 
 
+            }else if (input.Contains("attack"))
+            {
+
+                if(_player.CurrentLocation.MonsterLivingHere == null)
+                {
+
+                    Console.WriteLine("There is nothing here to attack.");
+
+
+                }
+                else
+                {
+
+                    if(_player.CurrentWeapon == null)
+                    {
+
+                        Console.WriteLine("You are not equippped with a weapon!");
+
+                    }
+                    else
+                    {
+
+                        _player.UseWeapon(_player.CurrentWeapon);
+
+                    }
+
+                }
+
+            }else if (input.StartsWith("equip "))
+            {
+
+                _player.UpdateWeapons();
+                string inputWeaponName = input.Substring(6).Trim();
+                if(string.IsNullOrEmpty(inputWeaponName))
+                {
+
+                    Console.WriteLine("You must enter the name of the weapon to equip");
+
+
+                }
+
             }
 
 
