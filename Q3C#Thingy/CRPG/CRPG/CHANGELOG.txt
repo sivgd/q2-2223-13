@@ -20,7 +20,9 @@ Proposed changes for v 0.0.4
 Version 0.0.4 completed on _____3/10/2023_____
 
 Proposed changes for v 0.0.5
-- Weapon Equipping
-- Attack Engine
-- Cleanup and abbreviation
++ Weapon Equipping
++ Attack Engine
++ Cleanup and abbreviation
 - Finish HELP system
+
+v. 0.05 complete!

@@ -149,7 +149,7 @@ namespace CRPG
 
 
 
-            }else if (input.Contains("attack"))
+            }else if (input.Contains("attack") || input == "a" )
             {
 
                 if(_player.CurrentLocation.MonsterLivingHere == null)
@@ -186,6 +186,41 @@ namespace CRPG
                 {
 
                     Console.WriteLine("You must enter the name of the weapon to equip");
+
+
+                }
+                else
+                {
+
+                    Weapon weaponToEquip = _player.Weapons.SingleOrDefault(x => x.Name.ToLower() == inputWeaponName
+                    || x.NamePlural.ToLower() == inputWeaponName);
+
+                    if(weaponToEquip == null)
+                    {
+
+                        Console.WriteLine("You do not have the weapon {0}", inputWeaponName);
+
+                    }
+                    else
+                    {
+
+                        _player.CurrentWeapon = weaponToEquip;
+                        Console.WriteLine("You equip your {0}", _player.CurrentWeapon.Name);
+
+                    }
+
+                }
+
+            }
+            else if (input == "weapons")
+            {
+
+                _player.UpdateWeapons();
+                Console.WriteLine("List of Weapons:");
+                foreach(Weapon w in _player.Weapons)
+                {
+
+                    Console.WriteLine("\t{0}", w.Name);
 
 
                 }
