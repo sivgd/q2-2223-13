@@ -136,7 +136,8 @@ namespace CRPG
                     Console.WriteLine(monsterMessage);
                 //Make a new monster
                 Monster standardMonster = World.MonsterByID(newLocation.MonsterLivingHere.ID);
-                _currentMonster = new Monster(standardMonster.ID, standardMonster.Name, standardMonster.MaximumDamage, standardMonster.RewardExperiencePoints, standardMonster.RewardGold, standardMonster.CurrentHitPoints, standardMonster.MaximumHitPoints);
+                _currentMonster = new Monster(standardMonster.ID, standardMonster.Name, 
+                    standardMonster.MaximumDamage, standardMonster.RewardExperiencePoints, standardMonster.RewardGold, standardMonster.CurrentHitPoints, standardMonster.MaximumHitPoints, standardMonster.Defense);
 
                 foreach(LootItem lootItem in standardMonster.LootTable)
                 {

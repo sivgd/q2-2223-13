@@ -69,7 +69,7 @@ namespace BootCampAM23
                         int damageToMonster = dice.Next(1, 20);
                         int damageToPlayer = dice.Next(1, 20);
 
-                        
+                        // Player gets hit
                         if(damageToPlayer < player.Defense)
                         {
                             
@@ -83,6 +83,7 @@ namespace BootCampAM23
                             player.Health -= damageToPlayer;
                         }
                         
+                        // Monster gets hit
                         if(damageToMonster < monster[mID].Defense)
                         {
                             

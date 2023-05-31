@@ -16,9 +16,10 @@ namespace CRPG
         public List<PlayerQuest> Quests;
         public Weapon CurrentWeapon;
         public List<Weapon> Weapons = new List<Weapon>();
+        public int Defense;
 
 
-        public Player(string name, int currentHitPoints, int maximumHitPoints, int gold, int experiencePoints, int level) : base(currentHitPoints, maximumHitPoints)
+        public Player(string name, int currentHitPoints, int maximumHitPoints, int gold, int experiencePoints, int level, int defense) : base(currentHitPoints, maximumHitPoints)
         {
 
             Name = name;
@@ -27,7 +28,7 @@ namespace CRPG
             Level = level;
             Inventory = new List<InventoryItem>();
             Quests = new List<PlayerQuest>();
-
+            Defense = defense;
 
 
 

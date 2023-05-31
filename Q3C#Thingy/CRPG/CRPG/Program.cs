@@ -9,7 +9,7 @@ namespace CRPG
     {
 
 
-        private static Player _player = new Player("Fred the Fearless", 10, 10, 20, 0, 1);
+        private static Player _player = new Player("Fred the Fearless", 10, 10, 20, 0, 1,7);
         static void Main(string[] args)
         {
             GameEngine.Initialize();
